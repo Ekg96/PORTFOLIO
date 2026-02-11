@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | El Hadji Kabe Gaye</title>
+    <meta name="description"
+        content="Portfolio professionnel de El Hadji Kabe Gaye, Data Scientist. Exploration de données, Machine Learning et Business Intelligence.">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Background Animated Blobs -->
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i data-lucide="database"></i>
+                .<span>EKG</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-reveal>
+            <div class="profile-container">
+                <img src="image_portait.png" alt="El Hadji Kabe Gaye" class="profile-pic">
+            </div>
+            <span class="hero-tag">Data Scientist / Statiscien </span>
+            <h1>Bonjour, je suis <br><span>El Hadji Kabe Gaye</span></h1>
+            <p>Je transforme la complexité des données brutes en indicateurs stratégiques et solutions intelligentes.
+                Expert en apprentissage automatique et modélisation statistique.</p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-primary">
+                    Voir mes projets <i data-lucide="arrow-right"></i>
+                </a>
+                <a href="cv_el_hadji_kabe_gaye.pdf" class="btn btn-outline" download>
+                    <i data-lucide="download"></i> CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="section-title" data-reveal>À Propos</div>
+        <div class="about-grid">
+            <div class="about-text" data-reveal>
+                <p>Passionné par la valorisation des données, j'interviens sur toute la chaîne de valeur : de la
+                    collecte et le nettoyage à la modélisation prédictive et la visualisation de résultats.</p>
+                <p>Mon approche combine rigueur mathématique et compréhension métier pour transformer chaque dataset en
+                    levier de décision exploitable. Je m'attache à structurer et documenter mes projets pour garantir
+                    une excellence technique durable.</p>
+            </div>
+            <div class="about-stats" data-reveal>
+                <div class="stat-card">
+                    <h3>06</h3>
+                    <p>Projets Réalisés</p>
+                </div>
+                <div class="stat-card">
+                    <h3>01</h3>
+                    <p>En Cours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <div class="section-title" data-reveal>Compétences</div>
+        <div class="skills-grid">
+            <!-- Category 1 -->
+            <div class="skill-card" data-reveal>
+                <i data-lucide="line-chart"></i>
+                <h3>Analyse & Data Viz</h3>
+                <ul>
+                    <li>Dashboards</li>
+                    <li>Nettoyage de données</li>
+                    <li>Tableaux de bord Excel</li>
+                    <li>Reporting automatisé</li>
+                </ul>
+            </div>
+            <!-- Category 2 -->
+            <div class="skill-card" data-reveal>
+                <i data-lucide="brain"></i>
+                <h3>Data Science</h3>
+                <ul>
+                    <li>Machine Learning (Sklearn)</li>
+                    <li>Python (Pandas, Numpy)</li>
+                    <li>Inférence Statistique</li>
+                    <li>Deep Learning Basics</li>
+                </ul>
+            </div>
+            <!-- Category 3 -->
+            <div class="skill-card" data-reveal>
+                <i data-lucide="database"></i>
+                <h3>Data Engineering</h3>
+                <ul>
+                    <li>SQL (MySQL, PostgreSQL)</li>
+                    <li>NoSQL (MongoDB)</li>
+                    <li>API Development (Flask)</li>
+                    <li>Etl & Pré-traitement</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title" data-reveal>Mes Réalisations</div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-reveal>
+                    <div class="project-image">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Apprentissage Automatique</h3>
+                        <p>Modèle de bout en bout couvrant l'exploration, le feature engineering et le déploiement.
+                        </p>
+                        <a href="https://github.com/Ekg96/Aprentissage-automatique" target="_blank"
+                            class="project-link">
+                            Voir sur GitHub <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-reveal>
+                    <div class="project-image">
+                        <i data-lucide="sigma"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inférence Statistique</h3>
+                        <p>Évaluation d'hypothèses et tests statistiques pour extraire des conclusions actionnables.
+                        </p>
+                        <a href="https://github.com/Ekg96/Inf-rence-statistique" target="_blank" class="project-link">
+                            Voir sur GitHub <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-reveal>
+                    <div class="project-image">
+                        <i data-lucide="activity"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Prédiction du Diabète</h3>
+                        <p>Application du machine learning pour la classification et le diagnostic précoce de santé.</p>
+                        <a href="https://github.com/Ekg96/Prediction-la-maladie-du-diab-tes" target="_blank"
+                            class="project-link">
+                            Voir sur GitHub <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-reveal>
+                    <div class="project-image">
+                        <i data-lucide="server"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>API Prédiction Rendement</h3>
+                        <p>Interface Flask permettant d'interagir avec des modèles prédictifs complexe en temps réel.
+                        </p>
+                        <a href="https://github.com/Ekg96/API-prediction-rendement-avec-Machinie-learning"
+                            target="_blank" class="project-link">
+                            Voir sur GitHub <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-reveal>
+                    <div class="project-image">
+                        <i data-lucide="layout-dashboard"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Adidas</h3>
+                        <p>Analyse interactive via Streamlit pour le suivi des performances de vente mondiales.</p>
+                        <a href="https://github.com/Ekg96/Dashboard-Adisdas" target="_blank" class="project-link">
+                            Voir sur GitHub <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card" data-reveal>
+                    <div class="project-image">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Aspirations Professionnelles</h3>
+                        <p>Extraction de connaissances à partir de sondages via des méthodes analytiques avancées.</p>
+                        <a href="https://github.com/Ekg96/Aspirations-Professionelles" target="_blank"
+                            class="project-link">
+                            Voir sur GitHub <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class="contact-card" data-reveal>
+            <div class="contact-info">
+                <h2>Prêt à collaborer ?</h2>
+                <div class="contact-links">
+                    <a href="mailto:kabegaye200596@gmail.com">
+                        <i data-lucide="mail"></i>kabegaye200596@gmail.com
+                    </a>
+                    <a href="tel:+221777023799">
+                        <i data-lucide="phone"></i>+221 77 702 37 99
+                    </a>
+                    <a href="https://linkedin.com/in/el-hadji-kabe-gaye-061223233" target="_blank">
+                        <i data-lucide="linkedin"></i>LinkedIn
+                    </a>
+                    <a href="https://github.com/Ekg96" target="_blank">
+                        <i data-lucide="github"></i>GitHub
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Votre Nom" required>
+                <input type="email" placeholder="Votre Email" required>
+                <textarea rows="5" placeholder="Votre Message" required></textarea>
+                <button type="submit" class="submit-btn">Envoyer mon message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 | El Hadji Kabe Gaye - Portfolio Data Science</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
