@@ -604,6 +604,19 @@ footer {
     height: 2px;
     background: white;
     transition: 0.3s;
+    border-radius: 2px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Responsive */
@@ -629,21 +642,106 @@ footer {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 100%;
         height: 100vh;
-        background: #0a0a0c;
+        background: rgba(5, 5, 5, 0.98);
+        backdrop-filter: blur(20px);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
-        transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        gap: 2.5rem;
+        transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 1000;
+        padding-bottom: 10vh;
     }
 
     .nav-links.active {
         right: 0;
     }
 
+    .nav-links a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+    }
+
     .btn-group {
         flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Extra small devices (iPhone SE, Small Androids) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .skill-card, .stat-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+
+    .container {
+        padding: 0 1.25rem;
+    }
+}
+
+/* Landscape Mode Fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding-top: 100px;
+    }
+    
+    .nav-links {
+        padding-top: 80px;
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+}
+
+/* Support for iPhone Notch & Safe Areas */
+@supports (padding: env(safe-area-inset-top)) {
+    nav {
+        padding-top: env(safe-area-inset-top);
+    }
+    
+    footer {
+        padding-bottom: calc(4rem + env(safe-area-inset-bottom));
     }
 }
